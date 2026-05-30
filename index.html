@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz: Economia ou Relações Internacionais?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="app-shell">
+        <aside class="visual-panel">
+          <img
+            class="hero-art"
+            src="assets/quiz-hero.png"
+            alt="Ilustração sobre Economia e Relações Internacionais"
+          />
+        </aside>
+
+        <section class="quiz-panel" aria-live="polite">
+          <h1 id="screen-title">Responda e veja seu resultado</h1>
+          <p id="screen-description" class="description">
+            Escolha as alternativas que mais combinam com você. No final,
+            mostramos sua afinidade com cada caminho.
+          </p>
+
+          <div id="progress" class="progress-wrap" hidden>
+            <div class="progress-info">
+              <span id="progress-label">Pergunta 1 de 11</span>
+              <span>Seu caminho</span>
+            </div>
+            <div class="progress">
+              <div id="progress-bar" class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div id="options" class="options"></div>
+
+          <div class="actions">
+            <button id="back-button" class="secondary-button" type="button" hidden>
+              Voltar
+            </button>
+            <button id="start-button" class="primary-button" type="button">
+              Começar quiz
+            </button>
+            <button id="restart-button" class="primary-button" type="button" hidden>
+              Refazer quiz
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
